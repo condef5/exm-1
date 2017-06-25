@@ -1,0 +1,82 @@
+body{ 
+	font-size: 16px;
+} 
+
+/*Estilos comunes*/
+.card{
+	background: #fff;
+	border-radius: 15px; 
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	display: inline-block;
+	height: 250px;  
+	width: 170px;
+}
+.card-select{
+	animation: grow .5s;
+	margin: 7px; 
+	padding: 3px;
+	font-size: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+}
+
+/* Estilos para las opciones de iniciar y reiniciar*/ 
+.list-options{ 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.list-options .card{
+	line-height: 250px;
+	font-size: 30px;	
+	color: #fff;
+	cursor: pointer;
+}
+.card-init{
+    background-image: linear-gradient(rgba(40, 33, 33, 0.72),rgba(208, 35, 27, 0.26)), url(../img/naipe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-reboot{
+	background: #49D292;
+}
+.score{
+	font-size: 2em;
+}
+#sum_player{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+/* Estilos para el container de las barajas del poker*/
+#lists-cards{ 
+	background: #f2f2f2;
+	margin-bottom: 1em; 
+	display: flex; 
+	justify-content: center;
+	padding: 1em;
+	min-height: 50vh;
+	align-items: center;
+}
+ 
+/* Estilos para los colores de las barajas seleccionadas */
+.dia, .cr{
+	color: tomato;
+}
+.tre, .cn{
+	color: black;
+}
+
+/* Animación basica para las cartas*/
+@keyframes grow {
+	from { 
+		width:  0px;
+		height: 0px;
+		font-size: 0%;
+	}
+	to {
+		width: 170px;
+		font-size: 2em;
+		height: 250px;  
+	}
+}

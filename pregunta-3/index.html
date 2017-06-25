@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pregunta 3</title>
+	<link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Div donde pintaremos las cartas  -->
+	<div id="lists-cards"></div>	
+	<!-- Div para las opciones -->
+	<div class="list-options text-center">  
+		<div  class="card card-reboot" id="reboot">Reiniciar</div>
+		<div class="score">
+			<h3>Total</h3>
+			<div id="sum_player"></div>
+		</div>
+		<div id="init-game">
+			<div class="card card-init">Iniciar</div>
+		</div> 	 
+	</div> 
+	<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title"></h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div> 
+				<div class="modal-body">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button >
+					<button type="button" id="modal-reboot" class="btn btn-primary" data-dismiss="modal">Reiniciar</button >
+				</div> 
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+	</html>
